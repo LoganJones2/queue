@@ -1,3 +1,6 @@
+#ifndef _QUEUE
+#define_QUEUE
+
 #define SIZE
 
 class Queue{
@@ -15,3 +18,6 @@ class Queue{
     int arr[SIZE];
     int front, back, count;
 };
+
+#include "Stack.cpp"
+#endif"
