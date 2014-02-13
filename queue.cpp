@@ -9,7 +9,7 @@ Queue::Queue(){
 bool Queue::push(int item){
   if(!is_full()){
     arr[++back % SIZE] = item;
-    cout++;
+    count++;
     return true;
   }
   return false;
