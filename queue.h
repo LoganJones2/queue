@@ -1,7 +1,7 @@
 #ifndef _QUEUE
 #define _QUEUE
 
-#define SIZE
+#define SIZE 10
 
 class Queue{
   public:
