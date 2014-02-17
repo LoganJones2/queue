@@ -1,12 +1,16 @@
 #include "Queue.h"
 
-Queue::Queue(){
+template <class T>
+
+//Constructor for template class
+Queue<T>::Queue(){
   front = 0;
   back = -1;
   count = 0;
 }
 
-bool Queue::push(int item){
+template <class T>
+bool Queue<T>::push(T item){
   if(!is_full()){
     arr[++back % SIZE] = item;
     count++;
@@ -15,7 +19,8 @@ bool Queue::push(int item){
   return false;
 }
 
-bool Queue::pop(){
+template <class T>
+bool Queue<T>::pop(){
   if(!is_empty()){
     front = (front + 1) % SIZE;
     count--;
@@ -24,26 +29,31 @@ bool Queue::pop(){
   return false;
 }
 
-bool Queue::is_empty(){
+template <class T>
+bool Queue<T>::is_empty(){
   return count == 0;
 }
 
-bool Queue::is_full(){
+template <class T>
+bool Queue<T>::is_full(){
   return count == SIZE;
 }
 
-int Queue::get_front(){
+template <class T>
+int Queue<T>::get_front(){
   if(!is_empty()){
     return arr[front];
   }
 }
 
-int Queue::get_back(){
+template <class T>
+int Queue<T>::get_back(){
   if(!is_empty()){
     return arr[back];
   }
 }
 
-int Queue::get_size(){
+template <class T>
+int Queue<T>::get_size(){
   return count;
 }
