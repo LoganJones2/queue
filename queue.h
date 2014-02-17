@@ -13,7 +13,6 @@ class Queue{
     int get_front();
     int get_back();
     int get_size();
-	int get_second();
     
   private:
     int arr[SIZE];
