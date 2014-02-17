@@ -40,14 +40,14 @@ bool Queue<T>::is_full(){
 }
 
 template <class T>
-int Queue<T>::get_front(){
+T Queue<T>::get_front(){
   if(!is_empty()){
     return arr[front];
   }
 }
 
 template <class T>
-int Queue<T>::get_back(){
+T Queue<T>::get_back(){
   if(!is_empty()){
     return arr[back];
   }
