@@ -24,6 +24,7 @@ int main(){
   cout << "Size is: " << q.get_size() << endl;
   cout << "Front is: " << q.get_front() << endl;
   cout << "Back is: " << q.get_back() << endl;
+  cout << "Second is: " << q.get_second() << endl;
   
   //end program
   return 0;

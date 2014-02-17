@@ -47,3 +47,9 @@ int Queue::get_back(){
 int Queue::get_size(){
   return count;
 }
+
+int Queue::get_second(){
+	if (get_size() > 1){
+		return arr[1];
+	}
+}
