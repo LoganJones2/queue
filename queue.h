@@ -19,5 +19,4 @@ class Queue{
     int front, back, count;
 };
 
-#include "Queue.cpp"
 #endif
