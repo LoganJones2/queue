@@ -1,8 +1,11 @@
 #include "Queue.h"
 
-template <class T>
+template class Queue<int>;
+template class Queue<double>;
+template class Queue<char>;
 
 //Constructor for template class
+template <class T>
 Queue<T>::Queue(){
   front = 0;
   back = -1;
